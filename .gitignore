@@ -1,12 +1,7 @@
-.venv/
+data/events.csv
+data/shots_processed.csv
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-data/raw/
-data/processed/matches_v2.csv
-data/processed/matches_2526.csv
-data/processed/players_2526.csv
-data/processed/players_raw.csv
-data/processed/team_stats_2526.csv
-.DS_Store
-.vercel/
+models/*.pkl
+.venv/

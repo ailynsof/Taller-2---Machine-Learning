@@ -1,0 +1,4 @@
+,Accuracy,F1,AUC
+LogisticRegression,0.569,0.2711,0.683
+RandomForest,0.8752,0.2863,0.6955
+XGBoost,0.8305,0.3022,0.706

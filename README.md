@@ -1,69 +1,70 @@
 # Taller 2: Machine Learning I — Premier League 2025/26
-**Integrantes:** Alejandro Pardo & Ailyn Gomez
-**GitHub Repo:** [AlejandroP212/Premier-League-ML-Oracle](https://github.com/AlejandroP212/Premier-League-ML-Oracle)
+**Integrantes:** Alejandro Pardo (Cód. XXXXX), Ailyn Gomez (Cód. YYYYY) & Tomas Rincon (Cód. ZZZZZ)
+**URL Dashboard:** [https://dashboard-rust-kappa-37.vercel.app/](https://dashboard-rust-kappa-37.vercel.app/)
 
-Este repositorio contiene la solución completa para el Taller 2 de ML1. Hemos construido un pipeline de machine learning para predecir variables clave de la Premier League 2025-26, incluyendo goles esperados (xG), marcador final y resultado del partido (H/D/A).
+Este repositorio contiene la solución completa para el Taller 2 de ML1. Hemos construido un pipeline de machine learning para predecir variables clave de la Premier League 2025-26, incluyendo goles esperados (xG), marcador final y resultado del partido (H/D/A), junto con un EDA profundo y Dashboard interactivo.
+
+---
+
+## 🧠 Approach y Pipeline (Enfoque)
+
+El enfoque de nuestro análisis consiste en construir un **Pipeline end-to-end** dividiendo el proyecto en tres etapas:
+1. **Setup & Data Engineering (01_setup.ipynb):** Descarga de datos, filtrado de eventos espaciales, y extracción de más de 10 qualifiers (features booleanas). Calculamos métricas geométricas de los tiros como distancia y ángulo.
+2. **Exploratory Data Analysis (02_eda.ipynb):** Analizamos la conversión por distancia/tipo, correlaciones clave, el sesgo de árbitros, y el xG esperado vs precio de jugadores para descubrir insights reales para la predicción.
+3. **Modelamiento Predictivo (03_models.ipynb):** Implementamos un modelo logístico base para xG y modelos avanzados (XGBoost y Random Forest). Además, usamos Regresión Lineal Ridge para predecir la cantidad de goles totales en los partidos y una Logística Multinomial para el Match Predictor (clasificación H/D/A), empleando *Rolling Features* para evitar el Data Leakage y capturar el "estado de forma" de cada equipo. Finalmente, un clustering segmenta a los jugadores según sus atributos de rendimiento.
+
+---
+
+## 🧩 Features Usadas por Modelo
+
+### Modelo xG (Logistic Regression, XGBoost, Random Forest)
+- **Geométricas:** `distance_to_goal`, `angle_to_goal`, `x_norm`, `y_centered`
+- **Qualifiers (Booleanas):** `is_big_chance`, `is_header`, `is_right_foot`, `is_left_foot`, `is_penalty`, `is_counter`, `from_corner`, `is_volley`, `first_touch`
+
+### Match Predictor (Ridge Regression & Logistic Multinomial H/D/A)
+- **Odds Base:** `b365h`, `b365d`, `b365a`
+- **Rolling Features (shift 1, window=5):** 
+  - `home_team_rolling_scored`, `home_team_rolling_conceded`, `home_team_rolling_wins`
+  - `away_team_rolling_scored`, `away_team_rolling_conceded`, `away_team_rolling_wins`
+
+### Clustering de Jugadores (KMeans)
+- Features: `expected_goals`, `expected_assists`, `goals_scored`, `assists`, `minutes`, `ict_index`, `threat`, `creativity`
 
 ---
 
 ## 📂 Estructura del Proyecto
 
-El proyecto está organizado de manera modular para garantizar la reproducibilidad y escalabilidad:
-
-### 1. `src/` (Source Code)
-Contiene los scripts de Python que ejecutan la lógica del proyecto:
-*   `process_data.py`: Descarga datos de la API y genera **Rolling Stats** (promedios móviles de los últimos 5 partidos). Esto es vital para capturar el "estado de forma" de los equipos.
-*   `train_xg.py`: Entrena el modelo de **Expected Goals (xG)** usando coordenadas (X, Y) de más de 7,000 disparos.
-*   `train_regression.py`: Implementa la **Regresión Lineal** para predecir goles (Home/Away) usando validación cruzada.
-*   `train_classification.py`: Entrena el **Match Predictor** (Regresión Logística) para clasificar el resultado en Victoria Local, Empate o Victoria Visitante.
-*   `export_dashboard_data.py`: Consolida todos los resultados y parámetros de los modelos en un archivo JSON para la web.
-
-### 2. `models/`
-Aquí se almacenan los modelos entrenados en formato binario (`.pkl`). Esto permite que el simulador web realice predicciones en milisegundos sin tener que re-entrenar los modelos.
-*   `xg_model.pkl`
-*   `regression_home.pkl` / `regression_away.pkl`
-*   `match_predictor.pkl`
-
-### 3. `data/`
-*   `raw/`: Datos originales descargados de la API.
-*   `processed/`: Versiones limpias de los datos, incluyendo la matriz de confusión y la importancia de las variables para el dashboard.
-
-### 4. `dashboard/`
-Contiene la aplicación web (SPA) construida con **HTML5, CSS3 y Vanilla JavaScript**.
-*   `index.html`: Estructura y storytelling.
-*   `style.css`: Diseño premium con modo oscuro y responsive.
-*   `script.js`: Lógica del simulador 1 vs 1 que aplica las fórmulas matemáticas de nuestros modelos en el navegador.
+*   `notebooks/01_setup.ipynb`: Descarga y preparación inicial de features.
+*   `notebooks/02_eda.ipynb`: Exploratory Data Analysis.
+*   `notebooks/03_models.ipynb`: Modelamiento predictivo y generación de JSONs para dashboard.
+*   `models/`: Modelos exportados en formato `.pkl`.
+*   `dashboard/`: Aplicación web con HTML, CSS, JS y Chart.js interactivo.
+*   `figures/`: Gráficos PNG generados en EDA y Models.
+*   `data/`: Datasets limpios y procesados.
 
 ---
 
-## 🧠 Metodología y Modelos
+## 🚀 Instrucciones de Ejecución Paso a Paso
 
-### Ingeniería de Variables
-No usamos los datos "crudos". Creamos variables de **diferencia de rendimiento** y promedios de los últimos 5 encuentros. Esto permite que el modelo entienda si un equipo viene en una racha ganadora o si su defensa ha estado floja recientemente.
-
-### El Modelo de xG
-Calculamos la probabilidad de gol de cada tiro basándonos en:
-*   **Distancia:** Qué tan lejos está el jugador del arco.
-*   **Ángulo:** Qué tan "cerrado" es el ángulo de disparo.
-Logramos un AUC-ROC de **0.711**, lo que nos da una base sólida para entender la calidad ofensiva de los equipos.
-
-### Predicción de Resultados
-Nuestro modelo de clasificación alcanzó una precisión del **48.6% (CV)**. Aunque parece bajo, es muy competitivo, considerando que el *baseline* de las casas de apuestas (Bet365) es del **50.6%**. Esto demuestra que el fútbol es intrínsecamente impredecible y que nuestro modelo captura gran parte de la señal disponible.
-
----
-
-## 🚀 Cómo Ejecutar el Proyecto
-
-1.  **Entorno Virtual:**
+1.  **Crear y activar el Entorno Virtual:**
     ```bash
     python3 -m venv .venv
     source .venv/bin/activate
+    ```
+2.  **Instalar dependencias:**
+    ```bash
     pip install -r requirements.txt
     ```
-2.  **Entrenamiento:**
-    Ejecutar los scripts en `src/` en orden: `process_data.py` -> `train_xg.py` -> `train_regression.py` -> `train_classification.py`.
-3.  **Visualización:**
-    Abrir `dashboard/index.html` en cualquier navegador moderno.
+3.  **Ejecutar los notebooks en orden:**
+    ```bash
+    jupyter nbconvert --to notebook --execute notebooks/01_setup.ipynb --output 01_setup_executed.ipynb
+    jupyter nbconvert --to notebook --execute notebooks/02_eda.ipynb --output 02_eda_executed.ipynb
+    jupyter nbconvert --to notebook --execute notebooks/03_models.ipynb --output 03_models_executed.ipynb
+    ```
+    *(Alternativamente, abrir Jupyter Lab/Notebook y ejecutar "Restart & Run All" en cada archivo respetando el orden numérico).*
+4.  **Visualizar Resultados en el Dashboard:**
+    - Levantar un servidor local en la raíz del proyecto o abrir directamente el `dashboard/index.html` en el navegador web.
+    - El dashboard cargará dinámicamente los datos `.json` generados en el paso 3.
 
 ---
 **Machine Learning I — 2026**

@@ -21,138 +21,257 @@
             <h1>Descifrando el Caos del <span>Fútbol</span></h1>
             <p>Más allá de los 90 minutos, existen patrones ocultos en el ruido. <br>Bienvenido a una odisea de Machine Learning sobre la Premier League 2025/26.</p>
             <div class="hero-actions">
-                <a href="#story" class="btn btn-outline">Nuestra Historia</a>
-                <a href="#simulator" class="btn">Simular Destino</a>
+                <a href="#inicio" class="btn btn-outline" onclick="openTab('inicio')">Nuestra Historia</a>
+                <a href="#proyeccion" class="btn" onclick="openTab('proyeccion')">Simular Destino</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- The Story Section -->
-        <section id="story" class="card narrative">
-            <div class="narrative-grid">
-                <div class="text">
-                    <span class="eyebrow">Capítulo 1</span>
-                    <h2>La Odisea del Dato</h2>
-                    <p>Todo comenzó con una pregunta: ¿Es posible predecir el resultado de un partido basándonos únicamente en el flujo del juego? Para responderlo, nos conectamos a las arterias de información de la Premier League, extrayendo miles de eventos en tiempo real.</p>
-                    <p>No nos detuvimos en los resultados finales. Analizamos el "momentum": creamos variables de <strong>Rolling Average</strong> que capturan cómo un equipo respira y evoluciona a lo largo de las semanas. Esta no es una foto estática; es una película del rendimiento deportivo.</p>
-                </div>
-                <div class="image-container">
-                    <img src="bg.png" alt="Data Flow" class="feature-img">
-                </div>
-            </div>
-        </section>
+        <!-- Top Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('inicio')">Inicio & KPIs</button>
+            <button class="tab-btn" onclick="openTab('eda-tab')">Análisis (EDA)</button>
+            <button class="tab-btn" onclick="openTab('metricas')">Métricas & Modelos</button>
+            <button class="tab-btn" onclick="openTab('proyeccion')">Oráculo (Proyección)</button>
+        </div>
 
-        <!-- xG Deep Dive -->
-        <section id="xg-depth" class="card narrative alternate">
-            <div class="narrative-grid">
-                <div class="image-container">
-                    <img src="xg_viz.png" alt="xG Map" class="feature-img">
-                </div>
-                <div class="text">
-                    <span class="eyebrow">Capítulo 2</span>
-                    <h2>El Oráculo del Gol: xG</h2>
-                    <p>En el fútbol, no todos los disparos son iguales. Un toque sutil a un metro del arco vale más que un misil desde media cancha. Aquí es donde entra nuestro modelo de <strong>Expected Goals (xG)</strong>.</p>
-                    <p>Entrenamos una Regresión Logística sobre una muestra de más de <strong>7,000 disparos</strong>. El modelo aprendió a valorar la probabilidad de éxito basada en la distancia y el ángulo, permitiéndonos ver la justicia —o injusticia— de un marcador.</p>
-                </div>
-            </div>
-            <div class="chart-wrapper">
-                <canvas id="xgChart"></canvas>
-            </div>
-        </section>
-
-        <!-- Model Logic -->
-        <section id="logic" class="card">
-            <div class="logic-header">
-                <h2>La Ciencia Detrás del Pronóstico</h2>
-                <p>Nuestros algoritmos no adivinan; calculan. Utilizamos validación cruzada (K-Fold) para asegurar que nuestro modelo sea robusto y no solo un reflejo de la suerte.</p>
-            </div>
-            <div class="stats-grid">
+        <!-- TAB: INICIO -->
+        <div id="inicio" class="tab-pane active">
+            <!-- KPIs Generales -->
+            <div class="stats-grid" style="margin-top: 0; margin-bottom: 3rem;">
                 <div class="stat-item">
-                    <div class="icon">📈</div>
-                    <h3>Regresión Lineal</h3>
-                    <p>Predice el volumen de goles. Entiende que los tiros a puerta son el mejor indicador de la calidad ofensiva.</p>
+                    <div class="icon">⚽</div>
+                    <h3>Goles Totales (Sim.)</h3>
+                    <p class="value">1,024</p>
                 </div>
                 <div class="stat-item">
-                    <div class="icon">⚖️</div>
-                    <h3>Regresión Logística</h3>
-                    <p>Clasifica el destino: Local, Empate o Visitante. Compite cabeza a cabeza con las cuotas de Bet365.</p>
+                    <div class="icon">🏟️</div>
+                    <h3>Partidos Analizados</h3>
+                    <p class="value">380</p>
                 </div>
                 <div class="stat-item">
-                    <div class="icon">🛡️</div>
-                    <h3>Validación Robusta</h3>
-                    <p>Usamos 5 pliegues de validación para garantizar que nuestras métricas de precisión (48.6%) sean reales y confiables.</p>
+                    <div class="icon">🎯</div>
+                    <h3>Precisión Base</h3>
+                    <p class="value">48.6%</p>
                 </div>
             </div>
-            <div class="chart-wrapper">
-                <canvas id="importanceChart"></canvas>
-            </div>
-        </section>
 
-        <!-- Match Simulator -->
-        <section id="simulator" class="card simulator">
-            <div class="sim-header">
-                <h2>El Laboratorio de Predicción</h2>
-                <p>Pon a prueba nuestra IA. Selecciona un enfrentamiento y observa cómo los modelos de regresión y clasificación convergen en un resultado probable.</p>
-            </div>
-            
-            <div class="sim-controls">
-                <div class="team-select">
-                    <label>Gloria Local</label>
-                    <select id="home-team-select"></select>
-                </div>
-                <div class="vs-circle">VS</div>
-                <div class="team-select">
-                    <label>Desafío Visitante</label>
-                    <select id="away-team-select"></select>
-                </div>
-            </div>
-            
-            <button id="simulate-btn" class="btn">Generar Predicción</button>
-            
-            <div id="results" class="results hidden">
-                <div class="score-display">
-                    <div class="team-block">
-                        <span class="name" id="res-home-name">LOCAL</span>
-                        <span class="score" id="res-home-goals">0.0</span>
+            <!-- The Story Section -->
+            <section id="story" class="card narrative">
+                <div class="narrative-grid">
+                    <div class="text">
+                        <span class="eyebrow">Capítulo 1</span>
+                        <h2>La Odisea del Dato</h2>
+                        <p>Todo comenzó con una pregunta: ¿Es posible predecir el resultado de un partido basándonos únicamente en el flujo del juego? Para responderlo, nos conectamos a las arterias de información de la Premier League, extrayendo miles de eventos en tiempo real.</p>
+                        <p>No nos detuvimos en los resultados finales. Analizamos el "momentum": creamos variables de <strong>Rolling Average</strong> que capturan cómo un equipo respira y evoluciona a lo largo de las semanas. Esta no es una foto estática; es una película del rendimiento deportivo.</p>
                     </div>
-                    <div class="score-divider">:</div>
-                    <div class="team-block">
-                        <span class="name" id="res-away-name">VISITANTE</span>
-                        <span class="score" id="res-away-goals">0.0</span>
+                    <div class="image-container">
+                        <img src="img/oracle_football.png" alt="Oracle Football ML" class="feature-img" style="box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);">
+                    </div>
+                </div>
+            </section>
+
+            <!-- xG Deep Dive -->
+            <section id="xg-depth" class="card narrative alternate">
+                <div class="narrative-grid">
+                    <div class="image-container">
+                        <img src="xg_viz.png" alt="xG Map" class="feature-img">
+                    </div>
+                    <div class="text">
+                        <span class="eyebrow">Oracle Insight</span>
+                        <h2>El Oráculo del Gol: xG</h2>
+                        <p>En el fútbol, no todos los disparos son iguales. Un toque sutil a un metro del arco vale más que un misil desde media cancha. Aquí es donde entra nuestro modelo de <strong>Expected Goals (xG)</strong>.</p>
+                        <p>Entrenamos una Regresión Logística sobre una muestra de más de <strong>7,000 disparos</strong>. El modelo aprendió a valorar la probabilidad de éxito basada en la distancia y el ángulo, permitiéndonos ver la justicia —o injusticia— de un marcador.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="shotmap" class="card">
+                <div class="logic-header">
+                    <h2>Cancha Interactiva (Análisis Espacial)</h2>
+                    <p>Explora todos los tiros de la temporada. Filtra por equipo o visualiza únicamente los goles. El radio del círculo representa el Expected Goal (xG) de la jugada.</p>
+                    <div class="sim-controls" style="margin-top: 15px;">
+                        <select id="team-filter"><option value="all">Todos los equipos</option></select>
+                        <label style="margin-left: 15px; cursor: pointer; color: #cbd5e1;">
+                            <input type="checkbox" id="show-goals-only"> Solo Goles
+                        </label>
+                    </div>
+                </div>
+                <div id="canvas-container" style="position: relative; width: 100%; display: flex; justify-content: center; margin-top: 20px;">
+                    <div id="loading-indicator" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-weight: bold; background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px; z-index: 20;">Cargando...</div>
+                    <canvas id="pitch" width="700" height="500" style="max-width: 100%; height: auto; background: #1a472a; border-radius: 8px; border: 2px solid #334155; cursor: crosshair;"></canvas>
+                    <div id="tooltip" style="position: absolute; display: none; background: rgba(15, 23, 42, 0.9); color: white; padding: 12px; border-radius: 6px; pointer-events: none; z-index: 10; font-size: 14px; border: 1px solid #38bdf8; min-width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB: EDA -->
+        <div id="eda-tab" class="tab-pane">
+            <section id="eda" class="card alternate">
+                <div class="logic-header">
+                    <h2>Exploratory Data Analysis</h2>
+                    <p>Descubrimientos clave en los datos de la Premier League 2025/26.</p>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px;">
+                    <div style="flex: 1; min-width: 300px; max-width: 45%; height: 350px; background: rgba(15, 23, 42, 0.4); padding: 15px; border-radius: 8px; border: 1px solid #334155;">
+                        <canvas id="edaDistChart"></canvas>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; max-width: 45%; height: 350px; background: rgba(15, 23, 42, 0.4); padding: 15px; border-radius: 8px; border: 1px solid #334155;">
+                        <canvas id="edaHDAChart"></canvas>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; width: 100%; height: 450px; margin-top: 10px; background: rgba(15, 23, 42, 0.4); padding: 15px; border-radius: 8px; border: 1px solid #334155;">
+                        <canvas id="edaTopChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB: METRICAS -->
+        <div id="metricas" class="tab-pane">
+            <section id="logic" class="card">
+                <div class="logic-header">
+                    <h2>La Ciencia Detrás del Pronóstico</h2>
+                    <p>Nuestros algoritmos no adivinan; calculan. Utilizamos validación cruzada (K-Fold) para asegurar que nuestro modelo sea robusto y no solo un reflejo de la suerte.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="icon">📈</div>
+                        <h3>Regresión Lineal (Ridge)</h3>
+                        <p><strong>Predice el volumen de goles totales en el partido.</strong> Utiliza variables de rendimiento continuo (Rolling stats como tiros y goles recientes) y regularización Ridge para evitar sobreajuste.</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon">⚖️</div>
+                        <h3>Regresión Logística Multinomial</h3>
+                        <p><strong>Clasifica el destino final: Local, Empate o Visitante.</strong> Analiza las probabilidades intrínsecas de cada equipo combinando su racha previa (Rolling wins) y las cuotas del mercado asiático.</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon">��️</div>
+                        <h3>Validación Robusta</h3>
+                        <p>Usamos 5 pliegues de validación para garantizar que nuestras métricas sean reales y confiables.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="performance" class="card alternate">
+                <div class="logic-header">
+                    <h2>Rendimiento de los Modelos</h2>
+                    <p>Comparamos nuestra IA contra las casas de apuestas (Bet365) y un baseline aleatorio.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="icon">🎯</div>
+                        <h3>xG AUC-ROC</h3>
+                        <p id="perf-auc" style="font-size: 24px; font-weight: bold; color: #4ade80;">Cargando...</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon">⚽</div>
+                        <h3>xG F1-Score</h3>
+                        <p id="perf-f1" style="font-size: 24px; font-weight: bold; color: #4ade80;">Cargando...</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="icon">🏆</div>
+                        <h3>Match Predictor Accuracy</h3>
+                        <p id="perf-acc" style="font-size: 24px; font-weight: bold; color: #4ade80;">Cargando...</p>
+                    </div>
+                </div>
+                <div style="margin-top: 40px; display: flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
+                    <div style="flex: 1; min-width: 300px; background: rgba(30, 41, 59, 0.5); padding: 20px; border-radius: 10px; border: 1px solid #334155;">
+                        <h3 style="text-align: center; margin-bottom: 20px; color: #f8fafc;">Matriz de Confusión</h3>
+                        <table id="conf-matrix" style="width: 100%; border-collapse: separate; border-spacing: 2px; text-align: center; color: white; font-weight: bold;">
+                            <tr><th style="color:#94a3b8; padding-bottom:10px;">Real \ Pred</th><th style="color:#94a3b8; padding-bottom:10px;">Local</th><th style="color:#94a3b8; padding-bottom:10px;">Empate</th><th style="color:#94a3b8; padding-bottom:10px;">Visitante</th></tr>
+                            <tr><th style="color:#94a3b8; padding:10px 0; text-align:left;">Local</th><td id="cm-00" style="padding:10px; border-radius:4px;"></td><td id="cm-01" style="padding:10px; border-radius:4px;"></td><td id="cm-02" style="padding:10px; border-radius:4px;"></td></tr>
+                            <tr><th style="color:#94a3b8; padding:10px 0; text-align:left;">Empate</th><td id="cm-10" style="padding:10px; border-radius:4px;"></td><td id="cm-11" style="padding:10px; border-radius:4px;"></td><td id="cm-12" style="padding:10px; border-radius:4px;"></td></tr>
+                            <tr><th style="color:#94a3b8; padding:10px 0; text-align:left;">Visitante</th><td id="cm-20" style="padding:10px; border-radius:4px;"></td><td id="cm-21" style="padding:10px; border-radius:4px;"></td><td id="cm-22" style="padding:10px; border-radius:4px;"></td></tr>
+                        </table>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; background: rgba(30, 41, 59, 0.5); padding: 20px; border-radius: 10px; border: 1px solid #334155;">
+                        <h3 style="text-align: center; margin-bottom: 20px; color: #f8fafc;">Comparativa Benchmarks (Accuracy %)</h3>
+                        <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 180px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <div style="text-align: center; width: 30%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                                <div style="height: 33.3%; background: #64748b; width: 60px; margin: 0 auto; border-radius: 4px 4px 0 0;" class="bar-fill"></div>
+                                <div style="margin-top: 10px; font-size: 13px; color:#94a3b8;">Baseline Aleatorio<br>33.3%</div>
+                            </div>
+                            <div style="text-align: center; width: 30%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                                <div style="height: 49.8%; background: #f59e0b; width: 60px; margin: 0 auto; border-radius: 4px 4px 0 0;" class="bar-fill"></div>
+                                <div style="margin-top: 10px; font-size: 13px; color:#94a3b8;">Bet365 (Mercado)<br>49.8%</div>
+                            </div>
+                            <div style="text-align: center; width: 30%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                                <div id="perf-bar" style="height: 0%; background: #10b981; width: 60px; margin: 0 auto; transition: height 1.5s ease-out; border-radius: 4px 4px 0 0;" class="bar-fill"></div>
+                                <div style="margin-top: 10px; font-size: 13px; font-weight: bold; color: #10b981;">Nuestra IA<br><span id="perf-bar-txt">...</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB: PROYECCION -->
+        <div id="proyeccion" class="tab-pane">
+            <section id="simulator" class="card simulator">
+                <div class="sim-header">
+                    <h2>Estimador de Resultados en Tiempo Real</h2>
+                    <p>Pon a prueba nuestra IA. Selecciona un enfrentamiento y nuestra IA calculará las probabilidades en milisegundos con los datos actualizados.</p>
+                </div>
+                
+                <div class="sim-controls">
+                    <div class="team-select">
+                        <label>Gloria Local</label>
+                        <select id="home-team-select"></select>
+                    </div>
+                    <div class="vs-circle">VS</div>
+                    <div class="team-select">
+                        <label>Desafío Visitante</label>
+                        <select id="away-team-select"></select>
                     </div>
                 </div>
                 
-                <div class="probability-viz">
-                    <div class="prob-track">
-                        <div class="bar-h" id="prob-h-bar"></div>
-                        <div class="bar-d" id="prob-d-bar"></div>
-                        <div class="bar-a" id="prob-a-bar"></div>
+                <button id="simulate-btn" class="btn">Generar Predicción</button>
+                
+                <div id="results" class="results hidden">
+                    <div class="score-display">
+                        <div class="team-block">
+                            <span class="name" id="res-home-name">LOCAL</span>
+                            <span class="score" id="res-home-goals">0.0</span>
+                        </div>
+                        <div class="score-divider">:</div>
+                        <div class="team-block">
+                            <span class="name" id="res-away-name">VISITANTE</span>
+                            <span class="score" id="res-away-goals">0.0</span>
+                        </div>
                     </div>
-                    <div class="prob-labels">
-                        <div class="prob-val h-text">
-                            <span class="percentage" id="prob-h-text">0%</span>
-                            <span class="label">Local</span>
+                    
+                    <div class="probability-viz">
+                        <div class="prob-track">
+                            <div class="bar-h" id="prob-h-bar"></div>
+                            <div class="bar-d" id="prob-d-bar"></div>
+                            <div class="bar-a" id="prob-a-bar"></div>
                         </div>
-                        <div class="prob-val d-text">
-                            <span class="percentage" id="prob-d-text">0%</span>
-                            <span class="label">Empate</span>
-                        </div>
-                        <div class="prob-val a-text">
-                            <span class="percentage" id="prob-a-text">0%</span>
-                            <span class="label">Visitante</span>
+                        <div class="prob-labels">
+                            <div class="prob-val h-text">
+                                <span class="percentage" id="prob-h-text">0%</span>
+                                <span class="label">Local</span>
+                            </div>
+                            <div class="prob-val d-text">
+                                <span class="percentage" id="prob-d-text">0%</span>
+                                <span class="label">Empate</span>
+                            </div>
+                            <div class="prob-val a-text">
+                                <span class="percentage" id="prob-a-text">0%</span>
+                                <span class="label">Visitante</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="UD">UD — Universidad Distrital Francisco José de Caldas</div>
+            <div class="UD">Universidad Externado de Colombia</div>
             <div class="course">Taller de Machine Learning I — 2026</div>
-            <div class="copyright">&copy; Alejandro Pardo & Ailyn Gomez</div>
+            <div class="copyright">&copy; Alejandro Pardo, Ailyn Gomez & Tomas Rincon</div>
         </div>
     </footer>
 

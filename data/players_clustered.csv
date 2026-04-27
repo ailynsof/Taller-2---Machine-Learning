@@ -1,0 +1,823 @@
+player_name,team,position,cluster
+Haaland,Man City,FWD,2
+Semenyo,Man City,MID,2
+B.Fernandes,Man Utd,MID,2
+Gabriel,Arsenal,DEF,3
+Rice,Arsenal,MID,0
+João Pedro,Chelsea,FWD,2
+J.Timber,Arsenal,DEF,0
+Thiago,Brentford,FWD,2
+Wilson,Fulham,MID,2
+Bowen,West Ham,FWD,2
+Senesi,Bournemouth,DEF,0
+Tarkowski,Everton,DEF,3
+Guéhi,Man City,DEF,0
+Bruno G.,Newcastle,MID,2
+Saka,Arsenal,MID,2
+Garner,Everton,MID,0
+Casemiro,Man Utd,MID,2
+Anderson,Nott'm Forest,MID,0
+Rogers,Aston Villa,MID,2
+Virgil,Liverpool,DEF,3
+Chalobah,Chelsea,DEF,3
+Raya,Arsenal,GKP,3
+Matheus N.,Man City,DEF,0
+Enzo,Chelsea,MID,2
+Lacroix,Crystal Palace,DEF,3
+O'Reilly,Man City,DEF,0
+Gibbs-White,Nott'm Forest,MID,2
+Ekitiké,Liverpool,FWD,2
+Gravenberch,Liverpool,MID,0
+Mbeumo,Man Utd,MID,2
+Pickford,Everton,GKP,3
+Stach,Leeds,MID,0
+Truffert,Bournemouth,DEF,0
+Szoboszlai,Liverpool,MID,0
+Ballard,Sunderland,DEF,3
+Zubimendi,Arsenal,MID,0
+Van Hecke,Brighton,DEF,3
+Henderson,Crystal Palace,GKP,3
+Mukiele,Sunderland,DEF,0
+Dewsbury-Hall,Everton,MID,0
+Mitchell,Crystal Palace,DEF,3
+James,Chelsea,DEF,0
+Thiaw,Newcastle,DEF,3
+Richards,Crystal Palace,DEF,3
+Rúben,Man City,DEF,3
+Foden,Man City,MID,2
+Konaté,Liverpool,DEF,3
+Keane,Everton,DEF,3
+Cunha,Man Utd,MID,2
+Roefs,Sunderland,GKP,3
+Muñoz,Crystal Palace,DEF,0
+Calvert-Lewin,Leeds,FWD,2
+Saliba,Arsenal,DEF,3
+Tavernier,Bournemouth,MID,2
+E.Le Fée,Sunderland,MID,0
+Scott,Bournemouth,MID,0
+Neto,Chelsea,MID,0
+Aaronson,Leeds,MID,0
+M.Fernandes,West Ham,MID,0
+Kelleher,Brentford,GKP,3
+Gakpo,Liverpool,MID,2
+Donnarumma,Man City,GKP,3
+Anthony,Burnley,MID,0
+Wirtz,Liverpool,MID,0
+Ndiaye,Everton,MID,0
+Alderete,Sunderland,DEF,3
+Gyökeres,Arsenal,FWD,2
+Cash,Aston Villa,DEF,0
+Watkins,Aston Villa,FWD,2
+Petrović,Bournemouth,GKP,3
+Sánchez,Chelsea,GKP,3
+Andersen,Fulham,DEF,3
+Cherki,Man City,MID,0
+Trossard,Arsenal,MID,0
+Martinez,Aston Villa,GKP,3
+Collins,Brentford,DEF,3
+Raúl,Fulham,FWD,2
+Verbruggen,Brighton,GKP,3
+O.Dango,Brentford,MID,0
+Schade,Brentford,MID,2
+M.Salah,Liverpool,MID,2
+Dalot,Man Utd,DEF,0
+Van de Ven,Spurs,DEF,3
+O'Brien,Everton,DEF,3
+Ampadu,Leeds,MID,3
+Xhaka,Sunderland,MID,0
+Minteh,Brighton,MID,0
+Welbeck,Brighton,FWD,2
+Palmer,Chelsea,MID,2
+Caicedo,Chelsea,MID,3
+Eze,Arsenal,MID,0
+Iwobi,Fulham,MID,0
+J.Palhinha,Spurs,MID,3
+Šeško,Man Utd,FWD,2
+Calafiori,Arsenal,DEF,3
+Cucurella,Chelsea,DEF,0
+Sarr,Crystal Palace,MID,2
+Rodon,Leeds,DEF,3
+Summerville,West Ham,MID,0
+Wharton,Crystal Palace,MID,0
+Gusto,Chelsea,DEF,0
+Konsa,Aston Villa,DEF,3
+Evanilson,Bournemouth,FWD,2
+A.Becker,Liverpool,GKP,3
+N.Williams,Nott'm Forest,DEF,0
+Romero,Spurs,DEF,3
+Struijk,Leeds,DEF,3
+Gordon,Newcastle,MID,2
+Vicario,Spurs,GKP,3
+Richarlison,Spurs,FWD,2
+Woltemade,Newcastle,FWD,2
+Milenković,Nott'm Forest,DEF,3
+Hume,Sunderland,DEF,3
+Reijnders,Man City,MID,0
+Dúbravka,Burnley,GKP,3
+Damsgaard,Brentford,MID,0
+Mateta,Crystal Palace,FWD,2
+Leno,Fulham,GKP,3
+J.Gomes,Wolves,MID,3
+F.Kadıoğlu,Brighton,DEF,0
+Ayari,Brighton,MID,3
+Hill,Bournemouth,DEF,3
+Van den Berg,Brentford,DEF,3
+Gomez,Brighton,MID,3
+Mac Allister,Liverpool,MID,0
+Buendía,Aston Villa,MID,0
+Pope,Newcastle,GKP,3
+Pedro Porro,Spurs,DEF,0
+Ugochukwu,Burnley,MID,3
+Dunk,Brighton,DEF,3
+Tete,Fulham,DEF,3
+Bernardo,Man City,MID,0
+Barnes,Newcastle,MID,2
+Diouf,West Ham,DEF,0
+Lewis-Potter,Brentford,DEF,3
+Sessegnon,Fulham,MID,3
+Grealish,Everton,MID,0
+Digne,Aston Villa,DEF,0
+Kayode,Brentford,DEF,3
+Mykolenko,Everton,DEF,3
+Gvardiol,Man City,DEF,3
+Souček,West Ham,MID,3
+Yarmoliuk,Brentford,MID,3
+Barry,Everton,FWD,3
+Berge,Fulham,MID,3
+Burn,Newcastle,DEF,3
+Murillo,Nott'm Forest,DEF,3
+Hudson-Odoi,Nott'm Forest,MID,0
+Kudus,Spurs,MID,0
+André,Wolves,MID,3
+Kroupi.Jr,Bournemouth,FWD,3
+Doku,Man City,MID,0
+Dorgu,Man Utd,DEF,0
+Shaw,Man Utd,DEF,3
+Mavropanos,West Ham,DEF,3
+Hincapie,Arsenal,DEF,3
+Lammens,Man Utd,GKP,3
+McGinn,Aston Villa,MID,0
+Igor Jesus,Nott'm Forest,FWD,0
+Bassey,Fulham,DEF,3
+Kerkez,Liverpool,DEF,3
+Amad,Man Utd,MID,0
+Hall,Newcastle,DEF,3
+H.Bueno,Wolves,DEF,0
+Bogle,Leeds,DEF,3
+Tonali,Newcastle,MID,0
+Sangaré,Nott'm Forest,MID,3
+S.Bueno,Wolves,DEF,3
+Ajer,Brentford,DEF,3
+Janelt,Brentford,MID,3
+Wieffer,Brighton,MID,3
+Cullen,Burnley,MID,3
+Sels,Nott'm Forest,GKP,3
+Georginio,Brighton,MID,0
+L.Paquetá,West Ham,MID,0
+Henderson,Brentford,MID,3
+Talbi,Sunderland,MID,3
+Okafor,Leeds,MID,3
+Merino,Arsenal,MID,3
+Onana,Aston Villa,MID,3
+Estève,Burnley,DEF,3
+Gana,Everton,MID,3
+Yeremy,Crystal Palace,MID,0
+Florentino,Burnley,MID,3
+Jensen,Brentford,MID,0
+Flemming,Burnley,FWD,3
+Smith Rowe,Fulham,MID,3
+Nmecha,Leeds,FWD,3
+Botman,Newcastle,DEF,3
+J.Murphy,Newcastle,MID,0
+Bentancur,Spurs,MID,3
+Wilson,West Ham,FWD,3
+A.Jimenez,Bournemouth,DEF,3
+Xavi,Spurs,MID,0
+Brobbey,Sunderland,FWD,3
+Maguire,Man Utd,DEF,3
+Joelinton,Newcastle,MID,3
+P.M.Sarr,Spurs,MID,3
+Wan-Bissaka,West Ham,DEF,3
+Ødegaard,Arsenal,MID,0
+Strand Larsen,Crystal Palace,FWD,3
+Kamara,Aston Villa,MID,3
+De Cuyper,Brighton,DEF,3
+Walker,Burnley,DEF,3
+Hutchinson,Nott'm Forest,MID,0
+Adli,Bournemouth,MID,3
+Adams,Bournemouth,MID,3
+Beto,Everton,FWD,3
+Sadiki,Sunderland,MID,3
+Isidor,Sunderland,FWD,3
+Gudmundsson,Leeds,DEF,3
+Spence,Spurs,DEF,3
+Krejčí,Wolves,DEF,3
+L.Miley,Newcastle,MID,3
+Rodrigo,Man City,MID,3
+Iroegbunam,Everton,MID,3
+José Sá,Wolves,GKP,3
+Malen,Aston Villa,MID,3
+Estêvão,Chelsea,MID,0
+Bijol,Leeds,DEF,3
+N.Gonzalez,Man City,MID,3
+Livramento,Newcastle,DEF,3
+Gray,Spurs,MID,3
+Justin,Leeds,DEF,3
+Madueke,Arsenal,MID,3
+Lerma,Crystal Palace,MID,3
+Gruev,Leeds,MID,3
+Tel,Spurs,MID,3
+Tolu,Wolves,FWD,3
+Hinshelwood,Brighton,MID,3
+Fofana,Chelsea,DEF,3
+Kamada,Crystal Palace,MID,3
+Johnson,Crystal Palace,MID,3
+Tielemans,Aston Villa,MID,0
+Henry,Brentford,DEF,3
+Hartman,Burnley,DEF,3
+Mané,Wolves,FWD,3
+Hannibal,Burnley,MID,3
+Laurent,Burnley,MID,3
+Lukić,Fulham,MID,3
+Frimpong,Liverpool,DEF,3
+Garnacho,Chelsea,MID,0
+Schär,Newcastle,DEF,3
+Reinildo,Sunderland,DEF,3
+Areola,West Ham,GKP,3
+Chukwueze,Fulham,MID,0
+Pau,Aston Villa,DEF,3
+Mitoma,Brighton,MID,0
+Foster,Burnley,FWD,3
+Mosquera,Wolves,DEF,3
+Tchatchoua,Wolves,DEF,3
+Yoro,Man Utd,DEF,3
+C.Jones,Liverpool,MID,3
+Trippier,Newcastle,DEF,3
+Ndoye,Nott'm Forest,MID,3
+Martinelli,Arsenal,MID,3
+Brooks,Bournemouth,MID,0
+Mount,Man Utd,MID,3
+Aina,Nott'm Forest,DEF,3
+Diarra,Sunderland,MID,3
+Odobert,Spurs,MID,3
+Diakité,Bournemouth,DEF,1
+J.Arias,Wolves,MID,3
+Canvot,Crystal Palace,DEF,1
+Mings,Aston Villa,DEF,3
+Ekdal,Burnley,DEF,3
+Edwards,Burnley,MID,3
+King,Fulham,MID,3
+Aït-Nouri,Man City,DEF,3
+Longstaff,Leeds,MID,3
+Todibo,West Ham,DEF,3
+Hee Chan,Wolves,MID,3
+McNeil,Everton,MID,3
+Tanaka,Leeds,MID,3
+De Ligt,Man Utd,DEF,3
+Mainoo,Man Utd,MID,3
+Perri,Leeds,GKP,1
+Hermansen,West Ham,GKP,1
+Geertruida,Sunderland,DEF,3
+Kevin,Fulham,MID,3
+Bradley,Liverpool,DEF,3
+Guessand,Crystal Palace,MID,3
+Kolo Muani,Spurs,FWD,3
+Groß,Brighton,MID,3
+Maatsen,Aston Villa,DEF,3
+Kluivert,Bournemouth,MID,3
+Baleba,Brighton,MID,1
+Marmoush,Man City,MID,3
+Elanga,Newcastle,MID,3
+Humphreys,Burnley,DEF,3
+Hughes,Crystal Palace,MID,3
+Robinson,Fulham,DEF,3
+J.Cuenca,Fulham,DEF,1
+Martinez,Man Utd,DEF,1
+Bergvall,Spurs,MID,3
+Broja,Burnley,FWD,3
+Savona,Nott'm Forest,DEF,3
+S.Magassa,West Ham,MID,1
+Smith,Bournemouth,DEF,1
+Cook,Bournemouth,MID,3
+Tchaouna,Burnley,MID,3
+Mayenda,Sunderland,FWD,3
+Munetsi,Wolves,MID,3
+J.Ramsey,Newcastle,MID,3
+Delap,Chelsea,FWD,3
+Zirkzee,Man Utd,FWD,3
+Dominguez,Nott'm Forest,MID,3
+Bruun Larsen,Burnley,MID,3
+Darlow,Leeds,GKP,1
+Robertson,Liverpool,DEF,3
+Kilman,West Ham,DEF,3
+Veltman,Brighton,DEF,1
+Gruda,Brighton,MID,3
+Khusanov,Man City,DEF,1
+Morato,Nott'm Forest,DEF,1
+Danso,Spurs,DEF,1
+Bogarde,Aston Villa,DEF,1
+Chiesa,Liverpool,MID,1
+Adingra,Sunderland,MID,3
+Potts,West Ham,MID,3
+R.Gomes,Wolves,DEF,3
+Bellegarde,Wolves,MID,3
+Christie,Bournemouth,MID,3
+Hickey,Brentford,DEF,1
+Tosin,Chelsea,DEF,1
+Acheampong,Chelsea,DEF,1
+Ugarte,Man Utd,MID,1
+Solanke,Spurs,FWD,3
+Milner,Brighton,MID,3
+Walker-Peters,West Ham,DEF,3
+Andrey Santos,Chelsea,MID,3
+White,Arsenal,DEF,1
+Kostoulas,Brighton,FWD,3
+Castagne,Fulham,DEF,3
+Gomez,Liverpool,DEF,1
+Bobb,Fulham,MID,3
+Osula,Newcastle,FWD,1
+Traoré,Sunderland,MID,3
+Taty,West Ham,FWD,3
+Rayan,Bournemouth,MID,3
+Barkley,Aston Villa,MID,1
+Devenny,Crystal Palace,MID,3
+Cairney,Fulham,MID,1
+Isak,Liverpool,FWD,3
+Møller Wolfe,Wolves,DEF,3
+Douglas Luiz,Aston Villa,MID,3
+Mazraoui,Man Utd,DEF,1
+Toti,Wolves,DEF,1
+Mosquera,Arsenal,DEF,1
+Tuanzebe,Burnley,DEF,1
+Aké,Man City,DEF,1
+Savinho,Man City,MID,3
+Heaven,Man Utd,DEF,1
+Willock,Newcastle,MID,3
+Alcaraz,Everton,MID,3
+Sancho,Aston Villa,MID,3
+Gittens,Chelsea,MID,3
+Wood,Nott'm Forest,FWD,3
+Branthwaite,Everton,DEF,1
+Ward-Prowse,Burnley,MID,3
+Nketiah,Crystal Palace,FWD,3
+Muniz,Fulham,FWD,1
+Agbadou,Wolves,DEF,3
+Adama,West Ham,MID,1
+Gnonto,Leeds,MID,1
+Lindelöf,Aston Villa,DEF,1
+Enes Ünal,Bournemouth,FWD,1
+Boscagli,Brighton,DEF,1
+Patterson,Everton,DEF,1
+Scarles,West Ham,DEF,1
+Johnstone,Wolves,GKP,1
+Ramsdale,Newcastle,GKP,1
+Worrall,Burnley,DEF,1
+Disasi,West Ham,DEF,1
+Wissa,Newcastle,FWD,1
+Lucas Pires,Burnley,DEF,3
+Armstrong,Everton,MID,1
+Mamardashvili,Liverpool,GKP,1
+Lewis,Man City,DEF,1
+Yates,Nott'm Forest,MID,1
+Ngumoha,Liverpool,MID,1
+Milosavljević,Bournemouth,DEF,1
+Gallagher,Spurs,MID,1
+Rigg,Sunderland,MID,1
+Dibling,Everton,MID,1
+G.Jesus,Arsenal,FWD,1
+Bornauw,Leeds,DEF,1
+James,Leeds,MID,1
+Röhl,Everton,MID,1
+Uche,Crystal Palace,FWD,1
+Tzimas,Brighton,FWD,1
+Awoniyi,Nott'm Forest,FWD,1
+Clyne,Crystal Palace,DEF,1
+Dragusin,Spurs,DEF,1
+Udogie,Spurs,DEF,3
+Armstrong,Wolves,FWD,1
+O'Riley,Brighton,MID,1
+Chadi Riad,Crystal Palace,DEF,1
+Piroe,Leeds,FWD,1
+Cirkin,Sunderland,DEF,1
+Mundle,Sunderland,MID,1
+Bakwa,Nott'm Forest,MID,1
+Abraham,Aston Villa,FWD,1
+Carvalho,Brentford,MID,1
+Sonne,Burnley,DEF,1
+Diop,Fulham,DEF,1
+Bissouma,Spurs,MID,1
+Ellborg,Sunderland,GKP,1
+Lewis-Skelly,Arsenal,DEF,1
+Havertz,Arsenal,FWD,1
+Bailey,Aston Villa,MID,1
+Onyeka,Brentford,MID,1
+Marc Guiu,Chelsea,FWD,1
+Reed,Fulham,MID,1
+Harrison,Leeds,MID,1
+Endo,Liverpool,MID,1
+Stones,Man City,DEF,1
+Füllkrug,West Ham,FWD,1
+Doherty,Wolves,DEF,1
+Fer López,Wolves,MID,1
+M.Bizot,Aston Villa,GKP,1
+Trafford,Man City,GKP,1
+Ortega Moreno,Nott'm Forest,GKP,1
+Bayindir,Man Utd,GKP,1
+Hato,Chelsea,DEF,1
+Dowman,Arsenal,MID,1
+John,Nott'm Forest,GKP,1
+Coppola,Brighton,DEF,1
+George,Everton,MID,1
+Davies,Spurs,DEF,1
+Hoever,Wolves,DEF,1
+Pablo,West Ham,FWD,1
+Irving,West Ham,MID,1
+Kalimuendo,Nott'm Forest,FWD,1
+Angulo,Sunderland,MID,1
+Angel,Wolves,MID,1
+Nwaneri,Arsenal,MID,1
+McAtee,Nott'm Forest,MID,1
+O'Nien,Sunderland,DEF,1
+G.Rodriguez,West Ham,MID,1
+Lucca,Nott'm Forest,FWD,1
+Zinchenko,Nott'm Forest,DEF,1
+B.Badiashile,Chelsea,DEF,1
+Lavia,Chelsea,MID,1
+Benitez,Crystal Palace,GKP,1
+Gannon-Doak,Bournemouth,MID,1
+Nørgaard,Arsenal,MID,1
+Nelson,Brentford,MID,1
+Igor,Brighton,DEF,1
+Jörgensen,Chelsea,GKP,1
+Edozie,Wolves,MID,1
+Mayers,West Ham,DEF,1
+Mohamadou Kanté,West Ham,MID,1
+Watson,Brighton,MID,1
+Sosa,Crystal Palace,DEF,1
+Elliott,Aston Villa,MID,1
+Jair Cunha,Nott'm Forest,DEF,1
+L.Guilherme,West Ham,MID,1
+Alleyne,Man City,DEF,1
+H.Traorè,Bournemouth,MID,1
+Pinnock,Brentford,DEF,1
+Donovan,Brentford,MID,1
+Trésor,Burnley,MID,1
+Barnes,Burnley,FWD,1
+Esse,Crystal Palace,MID,1
+Nyoni,Liverpool,MID,1
+Kusi-Asare,Fulham,FWD,1
+Howell,Brighton,MID,1
+A.García,Aston Villa,DEF,1
+Soler,Bournemouth,DEF,1
+Coleman,Everton,DEF,1
+J.Fletcher,Man Utd,MID,1
+Neil,Sunderland,MID,1
+N.Aguerd,West Ham,DEF,1
+Pedro Lima,Wolves,DEF,1
+Alysson,Aston Villa,MID,1
+Tóth.A,Bournemouth,MID,1
+Souza,Spurs,DEF,1
+Buonanotte,Leeds,MID,1
+M.Sarr,Chelsea,DEF,1
+Malacia,Man Utd,DEF,1
+Abbott,Nott'm Forest,DEF,1
+Seelt,Sunderland,DEF,1
+Scarlett,Spurs,FWD,1
+Marshall,West Ham,FWD,1
+Chirewa,Wolves,MID,1
+Mukasa,Man City,MID,1
+George Hemmings,Aston Villa,MID,1
+Lacey,Man Utd,MID,1
+Drakes-Thomas,Crystal Palace,MID,1
+Netz,Nott'm Forest,DEF,1
+Jimoh-Aloba,Aston Villa,MID,1
+Winterburn,Bournemouth,MID,1
+Valdimarsson,Brentford,GKP,1
+Milambo,Brentford,MID,1
+Peart-Harris,Brentford,MID,1
+March,Brighton,MID,1
+Knight,Brighton,MID,1
+Banel,Burnley,MID,1
+Rodney,Crystal Palace,MID,1
+Édouard,Crystal Palace,FWD,1
+Byram,Leeds,DEF,1
+Kovačić,Man City,MID,1
+Fredricson,Man Utd,DEF,1
+Lascelles,Newcastle,DEF,1
+A.Murphy,Newcastle,DEF,1
+Jota,Nott'm Forest,MID,1
+Roberts,Sunderland,MID,1
+Olusesi,Spurs,MID,1
+Earthy,West Ham,MID,1
+Kalajdžić,Wolves,FWD,1
+Gunn,Nott'm Forest,GKP,1
+Masuaku,Sunderland,DEF,1
+Burrowes,Aston Villa,MID,1
+Oriola,Brighton,MID,1
+Byfield,Spurs,DEF,1
+Rowswell,Spurs,DEF,1
+Bendito Mantato,Man Utd,MID,1
+Fletcher,Man Utd,MID,1
+Jocelin.T,Sunderland,MID,1
+Arrizabalaga,Arsenal,GKP,1
+Hein,Arsenal,GKP,1
+Setford,Arsenal,GKP,1
+Kiwior,Arsenal,DEF,1
+Clarke,Arsenal,DEF,1
+Kacurri,Arsenal,DEF,1
+Nichols,Arsenal,DEF,1
+Fábio Vieira,Arsenal,MID,1
+Kabia,Arsenal,MID,1
+Sambi,Arsenal,MID,1
+Gauci,Aston Villa,GKP,1
+Marschall,Aston Villa,GKP,1
+Alex Moreno,Aston Villa,DEF,1
+Sousa,Aston Villa,DEF,1
+Yasin,Aston Villa,DEF,1
+Iling Jr,Aston Villa,MID,1
+Barrenechea,Aston Villa,MID,1
+Dobbin,Aston Villa,MID,1
+Broggio,Aston Villa,MID,1
+Dendoncker,Aston Villa,MID,1
+Young,Aston Villa,MID,1
+Redmond,Aston Villa,FWD,1
+Neto,Bournemouth,GKP,1
+Dennis,Bournemouth,GKP,1
+McKenna,Bournemouth,GKP,1
+Paulsen,Bournemouth,GKP,1
+Zabarnyi,Bournemouth,DEF,1
+Akinmboni,Bournemouth,DEF,1
+Bevan,Bournemouth,DEF,1
+J.Araujo,Bournemouth,DEF,1
+Mepham,Bournemouth,DEF,1
+Philip,Bournemouth,MID,1
+Sinisterra,Bournemouth,MID,1
+Faivre,Bournemouth,MID,1
+Sadi,Bournemouth,MID,1
+Silcott-Duberry,Bournemouth,MID,1
+Adu-Adjei,Bournemouth,FWD,1
+Balcombe,Brentford,GKP,1
+Cox,Brentford,GKP,1
+Eyestone,Brentford,GKP,1
+Roerslev,Brentford,DEF,1
+Arthur,Brentford,DEF,1
+Fredrick,Brentford,DEF,1
+Ji-soo,Brentford,DEF,1
+Meghoma,Brentford,DEF,1
+Nunes,Brentford,MID,1
+Konak,Brentford,MID,1
+Maghoma,Brentford,MID,1
+Trevitt,Brentford,MID,1
+Morgan,Brentford,FWD,1
+Steele,Brighton,GKP,1
+McGill,Brighton,GKP,1
+Rushworth,Brighton,GKP,1
+Scherpen,Brighton,GKP,1
+Estupiñan,Brighton,DEF,1
+Lamptey,Brighton,DEF,1
+Webster,Brighton,DEF,1
+Cashin,Brighton,DEF,1
+Slater,Brighton,DEF,1
+Tasker,Brighton,DEF,1
+Enciso,Brighton,MID,1
+Sima,Brighton,MID,1
+Sarmiento,Brighton,MID,1
+Yalcouye,Brighton,MID,1
+Mazilu,Brighton,MID,1
+Moran,Brighton,MID,1
+Ferguson,Brighton,FWD,1
+Weiss,Burnley,GKP,1
+Green,Burnley,GKP,1
+Hladký,Burnley,GKP,1
+Roberts,Burnley,DEF,1
+Delcroix,Burnley,DEF,1
+Dodgson,Burnley,DEF,1
+Jordan,Burnley,DEF,1
+Sambo,Burnley,DEF,1
+Benson,Burnley,MID,1
+Boateng,Burnley,MID,1
+Churlinov,Burnley,MID,1
+Koleosho,Burnley,MID,1
+A.Ramsey,Burnley,MID,1
+Adewumi,Burnley,MID,1
+Amdouni,Burnley,FWD,1
+Obafemi,Burnley,FWD,1
+Penders,Chelsea,GKP,1
+Slonina,Chelsea,GKP,1
+Colwill,Chelsea,DEF,1
+Anselmino,Chelsea,DEF,1
+Nkunku,Chelsea,MID,1
+Mudryk,Chelsea,MID,1
+D.Essugo,Chelsea,MID,1
+Paez,Chelsea,MID,1
+N.Jackson,Chelsea,FWD,1
+Matthews,Crystal Palace,GKP,1
+Holding,Crystal Palace,DEF,1
+Kporha,Crystal Palace,DEF,1
+Doucouré,Crystal Palace,MID,1
+Agbinone,Crystal Palace,MID,1
+Ahamada,Crystal Palace,MID,1
+Ebiowei,Crystal Palace,MID,1
+J.Rak-Sakyi,Crystal Palace,MID,1
+M.França,Crystal Palace,MID,1
+Ozoh,Crystal Palace,MID,1
+Umeh,Crystal Palace,MID,1
+Marsh,Crystal Palace,FWD,1
+Travers,Everton,GKP,1
+Tyrer,Everton,GKP,1
+Dixon,Everton,DEF,1
+Welch,Everton,DEF,1
+Bates,Everton,MID,1
+Ebere,Everton,MID,1
+Heath,Everton,MID,1
+Metcalfe,Everton,MID,1
+Y.Chermiti,Everton,FWD,1
+Sherif,Everton,FWD,1
+Benda,Fulham,GKP,1
+Amissah,Fulham,DEF,1
+Andreas,Fulham,MID,1
+Godo,Fulham,MID,1
+Harris,Fulham,MID,1
+Meslier,Leeds,GKP,1
+Cairns,Leeds,GKP,1
+Schmidt,Leeds,DEF,1
+Greenwood,Leeds,MID,1
+Ramazani,Leeds,MID,1
+Crew,Leeds,MID,1
+Gelhardt,Leeds,MID,1
+Gyabi,Leeds,MID,1
+Bamford,Leeds,FWD,1
+Mateo Joseph,Leeds,FWD,1
+Pécsi,Liverpool,GKP,1
+Woodman,Liverpool,GKP,1
+Tsimikas,Liverpool,DEF,1
+Nallo,Liverpool,DEF,1
+R.Williams,Liverpool,DEF,1
+Ramsay,Liverpool,DEF,1
+Luis Díaz,Liverpool,MID,1
+Bajcetic,Liverpool,MID,1
+McConnell,Liverpool,MID,1
+Morton,Liverpool,MID,1
+Darwin,Liverpool,FWD,1
+Danns,Liverpool,FWD,1
+Ederson M.,Man City,GKP,1
+Bettinelli,Man City,GKP,1
+Akanji,Man City,DEF,1
+Vitor Reis,Man City,DEF,1
+Gündoğan,Man City,MID,1
+Echeverri,Man City,MID,1
+Nypan,Man City,MID,1
+Phillips,Man City,MID,1
+Onana,Man Utd,GKP,1
+Harrison,Man Utd,GKP,1
+Heaton,Man Utd,GKP,1
+Mee,Man Utd,GKP,1
+D.Leon,Man Utd,DEF,1
+Amass,Man Utd,DEF,1
+Rashford,Man Utd,MID,1
+Antony,Man Utd,MID,1
+Collyer,Man Utd,MID,1
+Fitzgerald,Man Utd,MID,1
+Kone,Man Utd,MID,1
+Moorhouse,Man Utd,MID,1
+Højlund,Man Utd,FWD,1
+Obi,Man Utd,FWD,1
+Wheatley,Man Utd,FWD,1
+Gillespie,Newcastle,GKP,1
+Odysseas,Newcastle,GKP,1
+Krafth,Newcastle,DEF,1
+Ashby,Newcastle,DEF,1
+Pivas,Newcastle,DEF,1
+Targett,Newcastle,DEF,1
+Antoñito C.,Newcastle,MID,1
+Hayden,Newcastle,MID,1
+Kuol,Newcastle,MID,1
+White,Newcastle,MID,1
+Neave,Newcastle,FWD,1
+C.Miguel,Nott'm Forest,GKP,1
+Turner,Nott'm Forest,GKP,1
+David Carmo,Nott'm Forest,DEF,1
+O.Richards,Nott'm Forest,DEF,1
+Boly,Nott'm Forest,DEF,1
+O'Brien,Nott'm Forest,MID,1
+Da Silva Moreira,Nott'm Forest,MID,1
+Stamenic,Nott'm Forest,MID,1
+Patterson,Sunderland,GKP,1
+Moore,Sunderland,GKP,1
+Nna Noukeu,Sunderland,GKP,1
+Alese,Sunderland,DEF,1
+Anderson,Sunderland,DEF,1
+Hjelde,Sunderland,DEF,1
+Huggins,Sunderland,DEF,1
+Johnson,Sunderland,DEF,1
+Pembele,Sunderland,DEF,1
+Aleksić,Sunderland,MID,1
+Poveda,Sunderland,MID,1
+Ba,Sunderland,MID,1
+Browne,Sunderland,MID,1
+Ekwah,Sunderland,MID,1
+H.Jones,Sunderland,MID,1
+Matete,Sunderland,MID,1
+Triantis,Sunderland,MID,1
+Abdullahi,Sunderland,FWD,1
+Luís Hemir,Sunderland,FWD,1
+Rusyn,Sunderland,FWD,1
+Austin,Spurs,GKP,1
+Kinsky,Spurs,GKP,1
+Phillips,Spurs,DEF,1
+Takai,Spurs,DEF,1
+Vuskovic,Spurs,DEF,1
+Son,Spurs,MID,1
+Maddison,Spurs,MID,1
+Kulusevski,Spurs,MID,1
+Solomon,Spurs,MID,1
+Bryan,Spurs,MID,1
+Moore,Spurs,MID,1
+Min-hyeok,Spurs,MID,1
+Lankshear,Spurs,FWD,1
+Foderingham,West Ham,GKP,1
+Hegyi,West Ham,GKP,1
+Emerson,West Ham,DEF,1
+Casey,West Ham,DEF,1
+Álvarez,West Ham,MID,1
+Cornet,West Ham,MID,1
+Orford,West Ham,MID,1
+Bentley,Wolves,GKP,1
+King,Everton,GKP,1
+Meupiyou,Wolves,DEF,1
+Pond,Wolves,DEF,1
+Guedes,Wolves,MID,1
+B.Traore,Wolves,MID,1
+Gonzalez,Wolves,MID,1
+Hodge,Wolves,MID,1
+Fábio Silva,Wolves,FWD,1
+Chiwome,Wolves,FWD,1
+Fraser,Wolves,FWD,1
+Lecomte,Fulham,GKP,1
+Aznou,Everton,DEF,1
+Rees-Dottin,Bournemouth,MID,1
+Wright,Aston Villa,GKP,1
+Seung soo,Newcastle,MID,1
+Cardines,Crystal Palace,MID,1
+Leoni,Liverpool,DEF,1
+Rowe,Aston Villa,DEF,1
+Proctor,Aston Villa,GKP,1
+Onyango,Everton,MID,1
+Campbell,Everton,DEF,1
+Patterson,Aston Villa,DEF,1
+Harriman-Annous,Arsenal,MID,1
+Cuiabano,Nott'm Forest,DEF,1
+Fabianski,West Ham,GKP,1
+Mfuni,Man City,DEF,1
+Gray,Leeds,FWD,1
+McAidoo,Man City,MID,1
+Emenalo,Chelsea,MID,1
+Morrison,Liverpool,MID,1
+Dasilva,Brentford,MID,1
+Akhamrich,Spurs,MID,1
+Golambeckis,West Ham,DEF,1
+Ruddy,Newcastle,GKP,1
+DaCosta,Bournemouth,MID,1
+Hollingshead,Aston Villa,GKP,1
+Salmon,Arsenal,DEF,1
+Lucky,Liverpool,DEF,1
+Simmonds,Brighton,DEF,1
+Gray,Man City,MID,1
+Heskey,Man City,MID,1
+Shahar,Newcastle,DEF,1
+Olagunju,Wolves,DEF,1
+Rawlings,Wolves,MID,1
+Leon Routh,Aston Villa,DEF,1
+Ridgeon,Fulham,MID,1
+Alabi,Newcastle,MID,1
+Benamar,Crystal Palace,DEF,1
+Jenson Jones,Sunderland,DEF,1
+Tutierov,Sunderland,MID,1
+Pimlott,Burnley,MID,1
+Ojinnaka,Wolves,MID,1
+Sutherland,Wolves,MID,1
+Graham,Everton,FWD,1
+Casey,Crystal Palace,FWD,1
+Carroll,Aston Villa,DEF,1
+Forster,Bournemouth,GKP,1
+Brierley,Burnley,MID,1
+McNally,Fulham,GKP,1
+Chambers,Leeds,MID,1
+Kukonki,Man Utd,DEF,1
+Merrick,Chelsea,GKP,1
+Williams-Barnett,Spurs,MID,1
+King,Crystal Palace,DEF,1
+Furo,Brentford,FWD,1
+Imray,Crystal Palace,DEF,1
+Stevens,Bournemouth,MID,1
+Lamadrid,West Ham,MID,1
+Sharman-Lowe,Chelsea,GKP,1
+Mandas,Bournemouth,GKP,1
+Abbey,Wolves,MID,1
+Bentt,Brentford,MID,1
+Kyerematen,Spurs,MID,1
+Wilson,Spurs,FWD,1
+Shield,Brentford,DEF,1
+McMahon-Brown,Burnley,MID,1
+Whittaker,Sunderland,MID,1
+Jones,Sunderland,MID,1
