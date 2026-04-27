@@ -1,5 +1,5 @@
 # Taller 2: Machine Learning I — Premier League 2025/26
-**Integrantes:** Alejandro Pardo (Cód. XXXXX), Ailyn Gomez (Cód. YYYYY) & Tomas Rincon (Cód. ZZZZZ)
+**Integrantes:** Alejandro Pardo, Ailyn Gomez & Tomas Rincon
 **URL Dashboard:** [https://dashboard-rust-kappa-37.vercel.app/](https://dashboard-rust-kappa-37.vercel.app/)
 
 Este repositorio contiene la solución completa para el Taller 2 de ML1. Hemos construido un pipeline de machine learning para predecir variables clave de la Premier League 2025-26, incluyendo goles esperados (xG), marcador final y resultado del partido (H/D/A), junto con un EDA profundo y Dashboard interactivo.
